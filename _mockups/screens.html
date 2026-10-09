@@ -1,0 +1,166 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="screens.css">
+<style>
+.photo{background:linear-gradient(180deg,#9ccbe6 0%,#cfe6f2 38%,#3f8fb5 39%,#1f6b8f 100%);position:relative;overflow:hidden}
+.photo svg{position:absolute}
+.legend{display:flex;gap:6px;align-items:center}
+.dot{width:10px;height:10px;border-radius:50%;display:inline-block}
+.bar{background:#007AFF;border-radius:4px 4px 0 0;width:26px}
+.stat{background:#fff;border-radius:14px;padding:12px 10px;flex:1;display:flex;flex-direction:column;gap:4px}
+.stat .v{font-size:22px;font-weight:700}
+.card{background:#fff;border-radius:16px;margin:12px 16px 0;padding:14px 16px}
+.card h3{font-size:17px;font-weight:600;display:flex;gap:8px;align-items:center}
+.plan{border:2px solid #E5E5EA;border-radius:14px;padding:14px 16px;display:flex;justify-content:space-between;align-items:center;margin:0 20px 10px;background:#fff}
+.plan.on{border-color:#007AFF;background:#F0F6FF}
+.badge{background:#34C759;color:#fff;font-size:12px;font-weight:700;padding:3px 8px;border-radius:8px;margin-left:8px}
+.mpin{position:absolute;transform:translate(-50%,-100%);display:flex;flex-direction:column;align-items:center}
+.mpin .b{width:30px;height:30px;border-radius:50%;border:2.5px solid #fff;display:flex;align-items:center;justify-content:center;color:#fff;box-shadow:0 1px 4px rgba(0,0,0,.35)}
+.mpin .t{width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-top:8px solid #fff;margin-top:-2px}
+</style></head><body>
+
+<!-- 1. LOG CATCH -->
+<div class="screen" id="log-catch" data-tab="0"><div class="content">
+ <div class="nav"></div>
+ <div class="ltitle">Log a Catch</div>
+ <div class="sh" data-i="loc" data-s="14">Location</div>
+ <div class="group">
+  <div class="row"><span>Latitude</span><span class="sec">26.142000</span></div>
+  <div class="row"><span>Longitude</span><span class="sec">−81.794800</span></div>
+  <div class="row"><span class="cap" style="font-size:13px">Navionics</span><span style="font-variant-numeric:tabular-nums;font-size:15px">26°08.520'N 81°47.688'W <span class="blue" data-i="copy" data-s="15"></span></span></div>
+  <div class="row"><span style="color:#34C759;font-size:14px;display:flex;gap:6px;align-items:center" data-i="loc" data-s="13">GPS ±5 m</span><span class="blue" style="font-size:15px">Enter Manually</span></div>
+ </div>
+ <div class="sh" data-i="fish" data-s="14">Fish Details</div>
+ <div class="group">
+  <div class="row"><span>Species</span><span class="sec">Snook<span class="chev">›</span></span></div>
+  <div class="row"><span>Length</span><span><span class="field">28.5</span> <span class="sec">in</span></span></div>
+  <div class="row"><span>Bait Used</span><span class="sec">Pilchard<span class="chev">›</span></span></div>
+ </div>
+ <div class="sh" data-i="cloud" data-s="14">Environmental Data</div>
+ <div class="group">
+  <div class="row"><span>Moon Phase</span><span class="sec">🌔 Waxing Gibbous</span></div>
+  <div class="row"><div>Water Temp<div class="cap">Auto · editable</div></div><span><span class="field">74.3</span> <span class="sec">°F</span></span></div>
+  <div class="row"><div>Air Temp<div class="cap">Auto · editable</div></div><span><span class="field">78</span> <span class="sec">°F</span></span></div>
+  <div class="row" style="flex-direction:column;align-items:stretch;gap:4px"><div style="display:flex;justify-content:space-between"><span>Weather</span><span class="cap">Auto · editable</span></div><span style="font-size:15px">Partly Cloudy, 78°F, Wind 8 mph SE</span></div>
+  <div class="row" style="flex-direction:column;align-items:stretch;gap:4px"><div style="display:flex;justify-content:space-between"><span>Tide</span><span class="cap">Auto · editable</span></div><span style="font-size:15px">Next High Tide at 2:34 PM (2.8 ft)</span></div>
+ </div>
+ <div class="foot">Weather: Apple Weather. Tides and water temperature: NOAA.</div>
+</div></div>
+
+<!-- 2. MAP -->
+<div class="screen" id="map" data-tab="1" style="background:#F4F1EA"><div class="content" style="top:0">
+ <svg viewBox="0 0 393 769" width="393" height="769" style="position:absolute;inset:0">
+  <rect width="393" height="769" fill="#F3EFE6"/>
+  <path d="M0 0H170C160 60 182 110 168 170C150 240 176 300 160 360C146 430 172 480 150 540C134 610 160 680 140 769H0Z" fill="#A6D1F2"/>
+  <path d="M168 170C190 200 214 205 226 240C236 270 212 300 222 330C230 360 262 372 258 404C254 440 222 450 214 480C206 520 236 540 220 572C208 600 176 600 160 620" fill="none" stroke="#A6D1F2" stroke-width="16" stroke-linecap="round"/>
+  <ellipse cx="205" cy="455" rx="26" ry="60" fill="#A6D1F2"/>
+  <path d="M184 0V769" stroke="#fff" stroke-width="5"/>
+  <path d="M262 0V769" stroke="#FFD86B" stroke-width="7"/>
+  <path d="M184 250H393M184 420H393M184 610H393" stroke="#fff" stroke-width="4"/>
+  <path d="M330 0V769" stroke="#fff" stroke-width="4"/>
+  <rect x="280" y="290" width="40" height="60" rx="4" fill="#DCEFD3"/><rect x="282" y="640" width="90" height="70" rx="6" fill="#DCEFD3"/>
+  <text x="300" y="402" font-size="13" font-family="Inter" fill="#6b6b6b" font-weight="600">Naples</text>
+  <text x="40" y="300" font-size="13" font-family="Inter" fill="#4f86ad" font-style="italic">Gulf of Mexico</text>
+  <text x="196" y="532" font-size="10" font-family="Inter" fill="#4f86ad" font-style="italic">Naples Bay</text>
+ </svg>
+ <div class="mpin" style="left:130px;top:300px"><div class="b" style="background:#FF9500" data-i="fish" data-s="16"></div><div class="t"></div></div>
+ <div class="mpin" style="left:96px;top:380px"><div class="b" style="background:#FF9500" data-i="fish" data-s="16"></div><div class="t"></div></div>
+ <div class="mpin" style="left:205px;top:440px"><div class="b" style="background:#FF3B30" data-i="fish" data-s="16"></div><div class="t"></div></div>
+ <div class="mpin" style="left:226px;top:250px"><div class="b" style="background:#FF9500" data-i="fish" data-s="16"></div><div class="t"></div></div>
+ <div class="mpin" style="left:118px;top:520px"><div class="b" style="background:#AF52DE" data-i="fish" data-s="16"></div><div class="t"></div></div>
+ <div style="position:absolute;left:150px;top:470px;width:18px;height:18px;border-radius:50%;background:#007AFF;border:3px solid #fff;box-shadow:0 0 0 14px rgba(0,122,255,.15)"></div>
+ <div style="position:absolute;top:0;left:0;right:0;background:rgba(249,249,249,.94);padding:54px 0 8px">
+  <div class="nav" style="justify-content:space-between"><span style="font-weight:600;font-size:17px;color:#000;flex:1;text-align:center;padding-left:30px">My Catches</span><span class="blue" data-i="filterOn" data-s="24"></span></div>
+ </div>
+ <div class="fbar" style="position:absolute;top:100px;left:0;right:0"><span data-i="filterOn" data-s="16"></span><span><b>Mar, Apr · Snook</b> · 5 of 23</span><span class="x">Reset</span></div>
+ <div style="position:absolute;right:12px;top:150px;background:#fff;border-radius:9px;width:44px;height:44px;display:flex;align-items:center;justify-content:center;color:#007AFF;box-shadow:0 1px 4px rgba(0,0,0,.2)" data-i="loc" data-s="20"></div>
+ <div style="position:absolute;left:12px;right:12px;bottom:95px;background:rgba(255,255,255,.96);border-radius:16px;padding:12px 16px;box-shadow:0 2px 10px rgba(0,0,0,.15);font-size:15px;display:flex;flex-direction:column;gap:6px">
+  <span class="cap" style="font-size:12px">Near you</span>
+  <span style="display:flex;gap:8px;align-items:center"><span class="blue" data-i="hist" data-s="17"></span>Last fished here Apr 12, 2026 · Snook</span>
+  <span style="display:flex;gap:8px;align-items:center"><span class="blue" data-i="pin" data-s="17"></span>3 other catches within ½ mile</span>
+ </div>
+</div></div>
+
+<!-- 3. CATCHES (filtered) -->
+<div class="screen" id="catches" data-tab="2"><div class="content">
+ <div class="nav"><span data-i="filterOn" data-s="24"></span><span data-i="map" data-s="22"></span></div>
+ <div class="ltitle">My Catches (5)</div>
+ <div class="chips"><span class="chip on" data-i="cal" data-s="14">Mar, Apr</span><span class="chip">All Species</span><span class="chip on">Snook</span><span class="chip">Redfish</span><span class="chip">Tarpon</span></div>
+ <div class="fbar"><span data-i="filterOn" data-s="16"></span><span><b>Mar, Apr · Snook</b> · 5 of 23 catches</span><span class="x">Reset</span></div>
+ <div class="group" style="margin-top:12px">
+
+ </div>
+</div></div>
+
+<!-- 4. CATCH DETAIL -->
+<div class="screen" id="catch-detail" data-tab="2"><div class="content">
+ <div class="nav split"><span>‹ My Catches</span><span style="font-weight:600;color:#000">Catch Details</span><span>Edit</span></div>
+ <div class="photo" style="height:200px;margin:8px 16px 0;border-radius:12px">PHOTO</div>
+ <div style="padding:12px 20px 4px"><div style="font-size:22px;font-weight:700">Snook</div><div class="sec" style="font-size:15px">Apr 12, 2026 at 7:42 AM EDT</div></div>
+ <div class="group" style="margin-top:6px;font-size:15px">
+  <div class="row"><span data-i="ruler" class="blue" style="display:flex;gap:10px;align-items:center"><span style="color:#000">Length</span></span><span class="sec">28.5"</span></div>
+  <div class="row"><span data-i="loc" class="blue" style="display:flex;gap:10px;align-items:center"><span style="color:#000">Coordinates</span></span><span class="sec">26°08.520'N 81°47.688'W</span></div>
+  <div class="row" style="flex-direction:column;align-items:flex-start;gap:6px;padding-left:44px;background:#F8FBFF">
+   <span class="cap">This Spot</span>
+   <span style="display:flex;gap:8px;align-items:center"><span class="blue" data-i="hist" data-s="16"></span>Last fished here Mar 28, 2026 · Redfish</span>
+   <span style="display:flex;gap:8px;align-items:center"><span class="blue" data-i="pin" data-s="16"></span>3 other catches within ½ mile</span>
+  </div>
+  <div class="row"><span data-i="fish" class="blue" style="display:flex;gap:10px;align-items:center"><span style="color:#000">Bait</span></span><span class="sec">Pilchard</span></div>
+  <div class="row"><span data-i="therm" class="blue" style="display:flex;gap:10px;align-items:center"><span style="color:#000">Water Temp</span></span><span class="sec">74.3°F</span></div>
+  <div class="row"><span data-i="moon" class="blue" style="display:flex;gap:10px;align-items:center"><span style="color:#000">Moon Phase</span></span><span class="sec">🌔 Waxing Gibbous</span></div>
+  <div class="row"><span data-i="wave" class="blue" style="display:flex;gap:10px;align-items:center"><span style="color:#000">Tide</span></span><span class="sec" style="text-align:right">High 2:34 PM (2.8 ft)</span></div>
+  <div class="row"><span data-i="cloud" class="blue" style="display:flex;gap:10px;align-items:center"><span style="color:#000">Weather</span></span><span class="sec">Partly Cloudy, 78°F</span></div>
+ </div>
+</div></div>
+
+<!-- 5. DASHBOARD -->
+<div class="screen" id="dashboard" data-tab="3"><div class="content">
+ <div class="nav"></div>
+ <div class="ltitle">Dashboard</div>
+ <div style="display:flex;gap:10px;padding:4px 16px 0">
+  <div class="stat"><span style="color:#007AFF" data-i="fish" data-s="18"></span><span class="v">23</span><span class="cap">Total Catches</span></div>
+  <div class="stat"><span style="color:#FF9500" data-i="star" data-s="18"></span><span class="v" style="font-size:19px">Snook</span><span class="cap">Top Species</span></div>
+  <div class="stat"><span style="color:#34C759" data-i="target" data-s="18"></span><span class="v" style="font-size:19px">Pilchard</span><span class="cap">Best Bait</span></div>
+ </div>
+ <div class="card"><h3><span style="color:#007AFF" data-i="clock" data-s="18"></span>Best Time of Day</h3><div class="cap" style="margin:2px 0 10px">When do you catch the most?</div>
+  <div style="display:flex;align-items:flex-end;justify-content:space-between;height:120px;border-bottom:1px solid #E5E5EA">BARS</div>
+  <div style="display:flex;justify-content:space-between;font-size:10px;color:#8A8A8E;margin-top:5px">LABELS</div>
+ </div>
+ <div class="card"><h3><span style="color:#5856D6" data-i="moon" data-s="18"></span>Moon Phase</h3><div class="cap" style="margin:2px 0 10px">Your best moon phases</div>
+  <div style="display:flex;gap:18px;align-items:center">
+   <div style="width:110px;height:110px;border-radius:50%;background:conic-gradient(#5856D6 0 35%,#007AFF 0 57%,#32ADE6 0 74%,#AF52DE 0 87%,#D1D1D6 0);-webkit-mask:radial-gradient(circle,transparent 30px,#000 31px);mask:radial-gradient(circle,transparent 30px,#000 31px)"></div>
+   <div style="display:flex;flex-direction:column;gap:6px;font-size:13px">
+    <span class="legend"><i class="dot" style="background:#5856D6"></i>🌕 Full Moon · 8</span><span class="legend"><i class="dot" style="background:#007AFF"></i>🌔 Waxing Gibbous · 5</span><span class="legend"><i class="dot" style="background:#32ADE6"></i>🌑 New Moon · 4</span><span class="legend"><i class="dot" style="background:#AF52DE"></i>🌓 First Quarter · 3</span><span class="legend"><i class="dot" style="background:#D1D1D6"></i>Other · 3</span>
+   </div></div>
+ </div>
+ <div class="card"><h3><span style="color:#FF3B30" data-i="therm" data-s="18"></span>Water Temperature</h3><div class="cap" style="margin:2px 0 6px">Best temp ranges · average 74.1°F</div></div>
+</div></div>
+
+<!-- 6. PAYWALL -->
+<div class="screen" id="paywall" data-tab="" style="background:#fff"><div class="content" style="bottom:0">
+ <div class="nav split" style="padding-top:8px"><span></span><span>Not Now</span></div>
+ <div style="text-align:center;padding:4px 24px 0"><div style="width:64px;height:64px;border-radius:50%;background:#007AFF;color:#fff;display:inline-flex;align-items:center;justify-content:center" data-i="fish" data-s="36"></div>
+  <div style="font-size:30px;font-weight:700;margin-top:8px">Catch Book Pro</div>
+  <div class="sec" style="font-size:15px;margin-top:6px;line-height:1.35">You've logged your 5 free catches. Subscribe to keep logging. Everything you've already logged stays available.</div></div>
+ <div style="padding:20px 28px 16px;display:flex;flex-direction:column;gap:14px;font-size:15px">
+  <div style="display:flex;gap:12px"><span class="blue" data-i="inf" data-s="24"></span><div><b>Log unlimited catches</b><div class="sec" style="font-size:13px">The free version includes 5 catches.</div></div></div>
+  <div style="display:flex;gap:12px"><span class="blue" data-i="seal" data-s="24"></span><div><b>Everything you've logged stays yours</b><div class="sec" style="font-size:13px">Viewing, editing, the map, filters, the dashboard, and iCloud backup and restore are always free.</div></div></div>
+  <div style="display:flex;gap:12px"><span class="blue" data-i="person" data-s="24"></span><div><b>No sign-up</b><div class="sec" style="font-size:13px">Tied to your Apple Account, on all your devices.</div></div></div>
+ </div>
+ <div class="plan on"><div><b>Yearly</b><span class="badge">Save 16%</span><div class="sec" style="font-size:13px">$19.99 / year</div></div><span class="blue" data-i="seal" data-s="24"></span></div>
+ <div class="plan"><div><b>Monthly</b><div class="sec" style="font-size:13px">$1.99 / month</div></div><span style="width:24px;height:24px;border-radius:50%;border:2px solid #C7C7CC"></span></div>
+ <div class="btn" style="margin:6px 20px 0">Subscribe</div>
+ <div class="blue" style="text-align:center;font-size:15px;margin-top:12px">Restore Purchases</div>
+ <div class="cap" style="padding:10px 24px 0;font-size:11px;line-height:1.35;text-align:center">Catch Book Pro is an auto-renewable subscription. It renews automatically unless cancelled at least 24 hours before the end of the current period. Manage or cancel in your Apple Account settings.</div>
+ <div style="text-align:center;font-size:12px;margin-top:8px" class="blue">Terms of Use · Privacy Policy</div>
+</div></div>
+
+<script>
+const rows=[["Snook",'28.5"',"Pilchard","Apr 12, 2026","7:42 AM","🌔","#2b7aa8"],["Snook",'31.0"',"Shrimp","Apr 5, 2026","6:58 AM","🌕","#3d8f6a"],["Snook",'24.0"',"Jig","Mar 30, 2026","5:31 PM","🌑","#8a6d3b"],["Snook",'26.5"',"Pilchard","Mar 21, 2025","8:10 AM","🌓","#4a6fa5"],["Snook",'33.5"',"Pinfish","Mar 9, 2025","7:05 AM","🌕","#2f6f7e"]];
+const fishSvg=(c)=>`<svg viewBox="0 0 56 56" width="56" height="56"><rect width="56" height="56" fill="${c}"/><rect y="30" width="56" height="26" fill="rgba(0,0,0,.18)"/><path d="M8 30c7-9 20-10 30-4l8-5-2 9 2 9-8-5c-10 6-23 5-30-4z" fill="#d9d2b8" stroke="#3a3a2a" stroke-width="1"/><path d="M14 30h26" stroke="#222" stroke-width="1.2"/><circle cx="14" cy="28" r="1.4" fill="#111"/></svg>`;
+document.querySelector('#catches .group').innerHTML=rows.map(r=>`<div class="row" style="justify-content:flex-start;gap:12px;padding:8px 16px"><div class="thumb" style="overflow:hidden">${fishSvg(r[6])}</div><div style="display:flex;flex-direction:column;gap:3px;flex:1"><b style="font-weight:600">${r[0]}</b><span class="cap" style="font-size:12px;display:flex;gap:10px"><span data-i="ruler" data-s="12" style="display:flex;gap:3px;align-items:center">${r[1]}</span><span data-i="fish" data-s="12" style="display:flex;gap:3px;align-items:center">${r[2]}</span></span><span class="cap" style="font-size:12px">${r[3]} · ${r[4]} EDT</span></div><span style="font-size:20px">${r[5]}</span></div>`).join('');
+document.querySelector('#catch-detail .photo').innerHTML=`<svg viewBox="0 0 361 200" width="361" height="200" style="left:0;top:0"><path d="M0 70 Q40 50 80 66 T160 60 T240 68 T361 58 V80 H0z" fill="#3c6b3a"/><path d="M60 150c30-36 120-48 190-18l40-22-10 38 12 38-42-22c-70 30-160 20-190-14z" fill="#e6dfc4" stroke="#33331f" stroke-width="2"/><path d="M95 150h150" stroke="#1d1d16" stroke-width="3"/><circle cx="96" cy="142" r="5" fill="#111"/><path d="M150 118l30-22 10 26z" fill="#c9c09f" stroke="#33331f" stroke-width="1.5"/></svg><span style="position:absolute;right:10px;bottom:8px;font-size:11px;color:#fff;background:rgba(0,0,0,.35);padding:2px 6px;border-radius:6px">Sample photo</span>`;
+const vals=[["Dawn",6],["Morning",9],["Late AM",3],["Noon",1],["Afternoon",2],["Evening",5],["Dusk",4],["Night",1]];
+document.querySelector('#dashboard .card div[style*="height:120px"]').innerHTML=vals.map(v=>`<div class="bar" style="height:${v[1]*12+2}px;${v[1]===9?'':'opacity:.55'}"></div>`).join('');
+document.querySelector('#dashboard .card div[style*="font-size:10px"]').innerHTML=vals.map(v=>`<span style="width:38px;text-align:center;font-size:8.5px;letter-spacing:-.2px">${v[0]}</span>`).join('');
+</script>
+<script src="icons.js"></script>
+</body></html>

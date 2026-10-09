@@ -1,0 +1,4 @@
+# GitHub Pages serves the HTML files as they are. These are not published:
+exclude:
+  - README.md
+  - _mockups
