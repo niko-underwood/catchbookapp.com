@@ -15,18 +15,18 @@ Plain HTML + one CSS file. No JavaScript, trackers, analytics, cookies, external
 Edit the HTML directly; there is no build step. Contact address used everywhere: `support@catchbookapp.com`.
 
 ## Screenshots (`assets/screens/`)
-The images there are **illustrative mockups with sample data**, rendered from `_mockups/screens.html` (not published). To use real screenshots, replace the files **keeping the same names**:
+`catches.webp` is a **real iPhone screenshot** (resized to 786 × 1704, converted from Display P3 to sRGB, metadata stripped, WebP quality 88). The others are **illustrative mockups with sample data**, rendered from `_mockups/screens.html` (not published). To use real screenshots, replace the files **keeping the same names** (or change the `src` in `index.html` if you change the format):
 
 | File | Screen |
 |---|---|
 | `log-catch.png` | Log a Catch, with conditions filled in |
 | `map.png` | Map tab with a filter applied |
-| `catches.png` | Catches list with month + species filter |
+| `catches.webp` | My Catches list (**real screenshot**) |
 | `catch-detail.png` | Catch details showing "Last fished here" |
 | `dashboard.png` | Dashboard |
 | `paywall.png` | Catch Book Pro paywall (not on the site yet; handy for App Store Connect review) |
 
-Any iPhone portrait screenshot works (the page frames it with CSS and crops to a 393:852 ratio). To keep the site fast, shrink them first, e.g. on a Mac: `sips -Z 1704 *.png` (about 786 × 1704). Use demo data, not real spots. When the screenshots are real, remove the "Screens shown are illustrative mockups" line in `index.html`.
+Any iPhone portrait screenshot works (the page frames it with CSS and crops to a 393:852 ratio). To keep the site fast, shrink them first, e.g. on a Mac: `sips -Z 1704 *.png` (about 786 × 1704). Use demo data, not real spots. When all screenshots are real, remove the "illustrative mockups" note (`mock-note`) in `index.html`.
 
 To re-render the mockups: open `_mockups/screens.html` in Chrome, or render each `#id` element at 2× with a headless browser (puppeteer: `element.screenshot()`).
 
