@@ -33,6 +33,10 @@ To re-render the mockups: open `_mockups/screens.html` in Chrome, or render each
 ## App Store badge
 `index.html` has a "Coming soon" placeholder with an HTML comment. When the app is live, replace it with Apple's official "Download on the App Store" badge (from https://developer.apple.com/app-store/marketing/guidelines/) linking to `https://apps.apple.com/app/id<APP ID>`, and update the "When can I get Catch Book?" FAQ answer.
 
+
+## v1.1 site wording (do not merge yet)
+Branch `v1.1-site` updates the marketing, pricing, support, terms, and privacy pages for Catch Book v1.1 (unlimited free logging; Pro unlocks Dashboard insights and GPX). **Do not merge to `main` or deploy until v1.1 is live on the App Store** — `main` is the live site and must keep matching v1.0 (5 free catches) while that build is in review.
+
 ## Hosting
 GitHub Pages from `main` / root, custom domain `catchbookapp.com`, HTTPS enforced.
 DNS: apex `A` records 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153 (optional `AAAA` 2606:50c0:8000::153, 2606:50c0:8001::153, 2606:50c0:8002::153, 2606:50c0:8003::153) and `www` `CNAME` niko-underwood.github.io.

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Catch Book: Fishing Log, Tides & Spots for iPhone</title>
-<meta name="description" content="Catch Book is a private fishing log for iPhone. Log a catch in seconds with GPS, Apple Weather, NOAA tides and water temperature, and moon phase, then find your best spots, months, and baits.">
+<meta name="description" content="Catch Book is a private fishing log for iPhone. Log unlimited catches with GPS, Apple Weather, NOAA tides and water temperature, pressure, and moon phase, then find your best spots, months, and baits.">
 <link rel="canonical" href="https://catchbookapp.com/">
 <meta name="theme-color" content="#0b7bbd">
 <meta name="color-scheme" content="light">
@@ -12,7 +12,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Catch Book">
 <meta property="og:title" content="Catch Book: Fishing Log, Tides & Spots for iPhone">
-<meta property="og:description" content="Catch Book is a private fishing log for iPhone. Log a catch in seconds with GPS, Apple Weather, NOAA tides and water temperature, and moon phase, then find your best spots, months, and baits.">
+<meta property="og:description" content="Catch Book is a private fishing log for iPhone. Log unlimited catches with GPS, Apple Weather, NOAA tides and water temperature, pressure, and moon phase, then find your best spots, months, and baits.">
 <meta property="og:url" content="https://catchbookapp.com/">
 <meta property="og:image" content="https://catchbookapp.com/assets/img/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -20,7 +20,7 @@
 <meta property="og:image:alt" content="Catch Book: your fishing log, tides, and spots, remembered">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Catch Book: Fishing Log, Tides & Spots for iPhone">
-<meta name="twitter:description" content="Catch Book is a private fishing log for iPhone. Log a catch in seconds with GPS, Apple Weather, NOAA tides and water temperature, and moon phase, then find your best spots, months, and baits.">
+<meta name="twitter:description" content="Catch Book is a private fishing log for iPhone. Log unlimited catches with GPS, Apple Weather, NOAA tides and water temperature, pressure, and moon phase, then find your best spots, months, and baits.">
 <meta name="twitter:image" content="https://catchbookapp.com/assets/img/og-image.png">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
@@ -77,12 +77,12 @@
     <div class="feature">
       <div>
         <h3>Conditions logged automatically</h3>
-        <p>Every catch records its GPS position (with Navionics-style coordinates you can copy) plus the conditions at that moment.</p>
+        <p>Every catch records its GPS position (with Navionics-style coordinates you can copy) plus the conditions at that moment&mdash;or at the time and place on a photo you add.</p>
         <ul class="ticks">
-          <li>Air temperature, wind, and sky from <strong>Apple&nbsp;Weather</strong></li>
-          <li>Next high or low tide and water temperature from the nearest <strong>NOAA</strong> station</li>
+          <li>Air temperature, wind, sky, and barometric pressure from <strong>Apple&nbsp;Weather</strong></li>
+          <li>Tide state at the catch time (incoming or outgoing, percent to high or low) and water temperature from the nearest <strong>NOAA</strong> station on any U.S. coast</li>
           <li>Moon phase and illumination, calculated on your iPhone</li>
-          <li>Species, length, bait, photo, and notes. Everything stays editable</li>
+          <li>Species, length, weight, Kept or Released, bait, photo, and notes. Everything stays editable</li>
         </ul>
       </div>
       <div class="feature-media"><div class="phone"><img src="assets/screens/log-catch.png" width="393" height="852" alt="Log a Catch screen" loading="lazy" decoding="async"></div></div>
@@ -94,7 +94,8 @@
         <p>See every catch as a pin, colored by species. Tap one to open the full details. The map follows the same filters as your list, so &ldquo;March and April snook&rdquo; is one tap away.</p>
         <ul class="ticks">
           <li>Re-center on your location in one tap</li>
-          <li>&ldquo;Near you&rdquo; shows the last catch logged close to where you are</li>
+          <li>A radius slider from &frac12; to 25 miles, anchored on <strong>My Location</strong> or the <strong>Map Center</strong></li>
+          <li>&ldquo;Near you&rdquo; shows the last catch and how many are within that radius</li>
         </ul>
       </div>
       <div class="feature-media"><div class="phone"><img src="assets/screens/map.png" width="393" height="852" alt="Map screen with filtered catch pins" loading="lazy" decoding="async"></div></div>
@@ -115,7 +116,7 @@
     <div class="feature">
       <div>
         <h3>&ldquo;Last fished here&rdquo;</h3>
-        <p>Open any catch to see the most recent other catch within about half a mile, and how many fish you&rsquo;ve caught around that spot. Find out whether a spot keeps producing or was a one-time thing.</p>
+        <p>Open any catch to see the most recent other catch at the same spot (within about half a mile). Widen the radius up to 25 miles to see &ldquo;Last fished within&hellip;&rdquo; and how many fish you&rsquo;ve caught around that area. Find out whether a spot keeps producing or was a one-time thing.</p>
       </div>
       <div class="feature-media"><div class="phone"><img src="assets/screens/catch-detail.png" width="393" height="852" alt="Catch details with a Last fished here section" loading="lazy" decoding="async"></div></div>
     </div>
@@ -123,7 +124,7 @@
     <div class="feature">
       <div>
         <h3>A dashboard of what works</h3>
-        <p>Your numbers, not guesswork: total catches, top species, best bait, best time of day, moon phase, sky conditions, water-temperature ranges, and your top spots.</p>
+        <p>Your numbers, not guesswork: total catches, top species, best bait, best time of day, best month, moon phase, tide, pressure, weight by species, Kept vs Released, sky conditions, water-temperature ranges, and your top spots. Free users see every card&rsquo;s title; Catch Book Pro unlocks the data.</p>
       </div>
       <div class="feature-media"><div class="phone"><img src="assets/screens/dashboard.png" width="393" height="852" alt="Dashboard with stats and charts" loading="lazy" decoding="async"></div></div>
     </div>
@@ -149,14 +150,14 @@
   <div class="wrap">
     <div class="center">
       <h2 class="section-title">Try it free. Upgrade when it&rsquo;s earned its place.</h2>
-      <p class="lead">Log your first 5 catches free. After that, Catch Book Pro keeps the log going.</p>
+      <p class="lead">Log unlimited catches free. Catch Book Pro unlocks Dashboard insights and GPX export.</p>
     </div>
     <div class="plans">
-      <div class="plan"><h3>Free</h3><div class="price">$0</div><p>5 catches, with every feature: auto conditions, map, filters, dashboard, and iCloud backup.</p></div>
-      <div class="plan"><h3>Pro Monthly</h3><div class="price">$1.99<small> / month</small></div><p>Unlimited catches. Cancel anytime.</p></div>
-      <div class="plan best"><span class="flag">Best value</span><h3>Pro Yearly</h3><div class="price">$19.99<small> / year</small></div><p>Unlimited catches. Save about 16% compared with monthly.</p></div>
+      <div class="plan"><h3>Free</h3><div class="price">$0</div><p>Unlimited logging, auto conditions, map, filters, list, and iCloud backup. Dashboard titles stay visible; the data is blurred until Pro.</p></div>
+      <div class="plan"><h3>Pro Monthly</h3><div class="price">$1.99<small> / month</small></div><p>Dashboard insights and GPX export (one catch or your whole log). Cancel anytime.</p></div>
+      <div class="plan best"><span class="flag">Best value</span><h3>Pro Yearly</h3><div class="price">$19.99<small> / year</small></div><p>Dashboard insights and GPX export. Save about 16% compared with monthly.</p></div>
     </div>
-    <p class="fine center">U.S. prices; other countries are priced by the App Store in local currency. Subscriptions renew automatically until cancelled in your Apple Account settings. If you stop subscribing, everything you&rsquo;ve logged stays available to view, edit, back up, and restore. See the <a href="terms.html">Terms</a>.</p>
+    <p class="fine center">U.S. prices; other countries are priced by the App Store in local currency. Subscriptions renew automatically until cancelled in your Apple Account settings. If you stop subscribing, everything you&rsquo;ve logged stays available to view, edit, filter, map, back up, and restore; Dashboard insights and GPX export require Pro again. See the <a href="terms.html">Terms</a>.</p>
   </div>
 </section>
 
@@ -167,10 +168,11 @@
       <details><summary>When can I get Catch Book?</summary><p>Catch Book is coming soon to the App Store for iPhone (iOS 17 or later). This page will link to it as soon as it&rsquo;s live.</p></details>
       <details><summary>Do I need an account?</summary><p>No. There&rsquo;s no sign-up. Backups use your own iCloud Drive and the subscription uses your Apple Account.</p></details>
       <details><summary>Can anyone else see my spots?</summary><p>No. Your catches are stored on your iPhone and, if you use iCloud, in your private iCloud Drive. We don&rsquo;t run a server and never receive your catches or locations. Read the <a href="privacy.html">Privacy Policy</a>.</p></details>
-      <details><summary>Does it work offline, out on the water?</summary><p>Yes. You can log a catch with GPS anywhere. Weather, tide, and water temperature fill in when you have a connection, and you can always type them in yourself.</p></details>
-      <details><summary>Where do tides and water temperature come from?</summary><p>From the nearest NOAA tide station along the Florida and Gulf coasts (within about 100 miles). Weather comes from Apple Weather and works anywhere.</p></details>
-      <details><summary>What counts toward the 5 free catches?</summary><p>Every catch you log, including ones you later delete. Editing a catch or restoring a backup doesn&rsquo;t use up free catches.</p></details>
-      <details><summary>What happens if I cancel Pro?</summary><p>You keep everything. You can still view, edit, filter, map, back up, and restore all your catches. You just can&rsquo;t log new ones beyond the free 5.</p></details>
+      <details><summary>Does it work offline, out on the water?</summary><p>Yes. You can log a catch with GPS anywhere. Weather, pressure, tide, and water temperature fill in when you have a connection, and you can always type them in yourself.</p></details>
+      <details><summary>Where do tides and water temperature come from?</summary><p>From the nearest NOAA station to the catch (U.S. coasts, Great Lakes, and territories, within about 100 miles). The app shows the station name and the tide state at the catch time. Weather and pressure come from Apple Weather and work anywhere.</p></details>
+      <details><summary>What&rsquo;s free, and what does Pro unlock?</summary><p>Logging catches is free and unlimited, along with the map, filters, auto conditions, and iCloud backup. Catch Book Pro unlocks the Dashboard insights (card titles stay visible for free, with the data blurred) and GPX export for Garmin, Navionics, and other chart apps.</p></details>
+      <details><summary>What happens if I cancel Pro?</summary><p>You keep everything you&rsquo;ve logged. You can still view, edit, filter, map, back up, and restore all your catches. Dashboard insights and GPX export go back behind Pro.</p></details>
+      <details><summary>Can I log an old catch from a photo?</summary><p>Yes. Add a photo and Catch Book asks whether to use the photo&rsquo;s time and location. If you say yes, it fills in historical weather, tide, water temperature, and moon for that time and place. A short tour on first launch shows how.</p></details>
       <details><summary>Is there an iPad or Android version?</summary><p>Catch Book is made for iPhone. It isn&rsquo;t available for Android.</p></details>
     </div>
     <p class="center" style="margin-top:28px">More help on the <a href="support.html">Support page</a>.</p>
