@@ -25,6 +25,11 @@ const P={
  check:'<path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>',
  inf:'<path d="M7 8.5c-2 0-3.5 1.5-3.5 3.5S5 15.5 7 15.5c3.5 0 6.5-7 10-7 2 0 3.5 1.5 3.5 3.5s-1.5 3.5-3.5 3.5c-3.5 0-6.5-7-10-7z" fill="none" stroke="currentColor" stroke-width="2"/>',
  seal:'<circle cx="12" cy="12" r="9.5" fill="currentColor"/><path d="M7.5 12.3l3 3 6-6.3" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>',
+ cond:'<circle cx="9" cy="9" r="4" fill="currentColor"/><path d="M9 1.5v2M9 14.5v2M1.5 9h2M14.5 9h2M3.7 3.7l1.4 1.4M12.9 12.9l1.4 1.4M3.7 14.3l1.4-1.4M12.9 5.1l1.4-1.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M8 21c3-3 5 3 8 0s4 0 6-1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>',
+ gauge:'<circle cx="12" cy="13" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 13l4-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="13" r="1.6" fill="currentColor"/>',
+ wind:'<path d="M3 9h11a3 3 0 10-3-3M3 15h15a3 3 0 11-3 3M3 12h8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>',
+ updown:'<path d="M8 20V5M4 9l4-4 4 4M16 4v15M12 15l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>',
+ xmark:'<circle cx="12" cy="12" r="9.5" fill="currentColor"/><path d="M8.5 8.5l7 7M15.5 8.5l-7 7" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>',
  person:'<circle cx="12" cy="8" r="4" fill="currentColor"/><path d="M4 21a8 8 0 0116 0z" fill="currentColor"/>',
  note:'<rect x="4" y="3" width="16" height="18" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 8h8M8 12h8M8 16h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>',
  sig:'<rect x="1" y="14" width="3" height="5" rx="1" fill="currentColor"/><rect x="6" y="11" width="3" height="8" rx="1" fill="currentColor"/><rect x="11" y="8" width="3" height="11" rx="1" fill="currentColor"/><rect x="16" y="5" width="3" height="14" rx="1" fill="currentColor"/>',
@@ -33,7 +38,7 @@ const P={
 };
 function I(n,w=20,h){return `<svg viewBox="0 0 ${n==='batt'?25:24} 24" width="${w}" height="${h||w}">${P[n]}</svg>`}
 function statusBar(){return `<div class="island"></div><div class="status"><span>9:41</span><span class="r">${I('sig',18,13)}${I('wifi',17,13)}${I('batt',27,13)}</span></div>`}
-function tabBar(on){const t=[['plus','Log Catch'],['map','Map'],['list','Catches'],['chart','Dashboard'],['gear','Settings']];
+function tabBar(on){const t=[['plus','Log Catch'],['map','Map'],['list','Catches'],['chart','Dashboard'],['cond','Conditions']];
  return `<div class="tabbar">${t.map(([i,l],k)=>`<div class="tab ${k===on?'on':''}">${I(i,26)}<span>${l}</span></div>`).join('')}</div><div class="home"></div>`}
 document.querySelectorAll('.screen').forEach(s=>{s.insertAdjacentHTML('afterbegin',statusBar());const t=s.dataset.tab;if(t!==undefined&&t!=='')s.insertAdjacentHTML('beforeend',tabBar(+t));
  s.querySelectorAll('[data-i]').forEach(e=>{e.innerHTML=I(e.dataset.i,+(e.dataset.s||16))+e.innerHTML})});

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Catch Book: Fishing Log, Tides & Spots for iPhone</title>
-<meta name="description" content="Catch Book is a private fishing log for iPhone. Log unlimited catches with GPS, Apple Weather, NOAA tides and water temperature, pressure, and moon phase, then find your best spots, months, and baits.">
+<meta name="description" content="Catch Book is a private fishing log for iPhone. Log unlimited catches with GPS, Apple Weather, NOAA tides and water temperature, pressure, and moon phase, check today&rsquo;s conditions against the ones behind your best catches, and find your best spots, months, and baits.">
 <link rel="canonical" href="https://catchbookapp.com/">
 <meta name="theme-color" content="#0b7bbd">
 <meta name="color-scheme" content="light">
@@ -12,7 +12,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Catch Book">
 <meta property="og:title" content="Catch Book: Fishing Log, Tides & Spots for iPhone">
-<meta property="og:description" content="Catch Book is a private fishing log for iPhone. Log unlimited catches with GPS, Apple Weather, NOAA tides and water temperature, pressure, and moon phase, then find your best spots, months, and baits.">
+<meta property="og:description" content="Catch Book is a private fishing log for iPhone. Log unlimited catches with GPS, Apple Weather, NOAA tides and water temperature, pressure, and moon phase, check today&rsquo;s conditions against the ones behind your best catches, and find your best spots, months, and baits.">
 <meta property="og:url" content="https://catchbookapp.com/">
 <meta property="og:image" content="https://catchbookapp.com/assets/img/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -20,7 +20,7 @@
 <meta property="og:image:alt" content="Catch Book: your fishing log, tides, and spots, remembered">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Catch Book: Fishing Log, Tides & Spots for iPhone">
-<meta name="twitter:description" content="Catch Book is a private fishing log for iPhone. Log unlimited catches with GPS, Apple Weather, NOAA tides and water temperature, pressure, and moon phase, then find your best spots, months, and baits.">
+<meta name="twitter:description" content="Catch Book is a private fishing log for iPhone. Log unlimited catches with GPS, Apple Weather, NOAA tides and water temperature, pressure, and moon phase, check today&rsquo;s conditions against the ones behind your best catches, and find your best spots, months, and baits.">
 <meta name="twitter:image" content="https://catchbookapp.com/assets/img/og-image.png">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
@@ -34,6 +34,7 @@
     <a class="brand" href="./"><img src="assets/img/app-icon-256.png" alt="" width="34" height="34">Catch Book</a>
     <nav class="nav-links" aria-label="Main">
       <a class="hide-sm" href="index.html#features">Features</a>
+      <a class="hide-sm" href="index.html#conditions">Conditions</a>
       <a href="index.html#pricing">Pricing</a>
       <a class="hide-sm" href="index.html#faq">FAQ</a>
       <a href="support.html">Support</a>
@@ -63,6 +64,40 @@
     <div class="hero-phones">
       <div class="phone"><img src="assets/screens/log-catch.png" width="393" height="852" alt="Log a Catch screen with location, species, bait, and auto-filled water temperature, weather, tide, and moon phase" fetchpriority="high" decoding="async"></div>
       <div class="phone"><img src="assets/screens/map.png" width="393" height="852" alt="Map of catches near Naples, Florida, filtered to Snook in March and April, with a Last fished here card" fetchpriority="high" decoding="async"></div>
+    </div>
+  </div>
+</section>
+
+<section id="conditions" class="conditions-band" aria-labelledby="conditions-title">
+  <div class="wrap">
+    <div class="feature">
+      <div>
+        <span class="pill">New in Catch Book 1.1 &middot; Conditions tab</span>
+        <h2 id="conditions-title" class="section-title" style="margin-top:14px">Know when to go</h2>
+        <p class="lead">Open the Conditions tab before you head out. See what the water is doing right now, and how today stacks up against the days you caught the most fish.</p>
+        <div class="cond-cards">
+          <div class="cond-card">
+            <h3>Right Now <span class="tag">Free</span></h3>
+            <ul class="ticks">
+              <li>Tide at your nearest <strong>NOAA</strong> station: incoming or outgoing, and how far to the next high or low</li>
+              <li>Moon phase and illumination</li>
+              <li>Air and water temperature</li>
+              <li>Barometric pressure and whether it&rsquo;s rising or falling</li>
+              <li>Wind speed and direction. Pull down to refresh</li>
+            </ul>
+          </div>
+          <div class="cond-card">
+            <h3>Your Best Conditions <span class="tag pro">Pro</span></h3>
+            <ul class="ticks">
+              <li>For each condition, the range that produced most of your catches, like &ldquo;Outgoing, 40&ndash;80% to low&rdquo;</li>
+              <li>A check or &times; for today&rsquo;s value, and a summary: &ldquo;Today matches 4 of 6 of your best conditions&rdquo;</li>
+              <li>Filter by species, because the best snook day isn&rsquo;t always the best redfish day</li>
+            </ul>
+          </div>
+        </div>
+        <p class="cond-foot">Built from your own catch log, on your iPhone. A pattern appears once at least 5 catches recorded that condition. Free users see Your Best Conditions blurred until they upgrade.</p>
+      </div>
+      <div class="feature-media"><div class="phone"><img src="assets/screens/conditions.png" width="393" height="852" alt="Conditions tab. Right Now shows an outgoing tide, 62% to low at the Naples Bay station, a waxing gibbous moon, 76.4&deg;F water, 79&deg;F air, rising pressure at 30.02 inHg, and a northeast wind at 8 mph. Your Best Conditions, filtered to Snook, says today matches 4 of 6 of your best conditions, with checks for tide, moon, and water temperature. Sample data." loading="lazy" decoding="async"></div></div>
     </div>
   </div>
 </section>
@@ -128,13 +163,7 @@
       </div>
       <div class="feature-media"><div class="phone"><img src="assets/screens/dashboard.png" width="393" height="852" alt="Dashboard with stats and charts" loading="lazy" decoding="async"></div></div>
     </div>
-    <div class="feature">
-      <div>
-        <h3>Conditions right now</h3>
-        <p>The Conditions tab shows the tide at your nearest NOAA station (incoming or outgoing, and how far to the next high or low), the moon, air and water temperature, barometric pressure and its trend, and wind, wherever you are. With Catch Book Pro, it compares today with the conditions you&rsquo;ve caught the most fish in, by species, and tells you how many match.</p>
-      </div>
-    </div>
-    <p class="mock-note">The My Catches list is a real iPhone screenshot. The other screens are illustrative mockups with sample data.</p>
+    <p class="mock-note">The My Catches list is a real iPhone screenshot. The other screens, including Conditions, are illustrative mockups with sample data.</p>
   </div>
 </section>
 

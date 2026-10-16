@@ -67,6 +67,21 @@ section{padding:72px 0}
 .mock-note{font-size:13px;color:var(--muted);text-align:center;margin-top:12px}
 .alt{background:var(--soft)}
 
+/* Conditions showcase (v1.1) */
+.conditions-band{background:linear-gradient(180deg,#fff 0,#eaf5fd 100%);border-top:1px solid var(--line)}
+.conditions-band .feature{padding:0}
+.conditions-band .feature-media{order:0}
+.cond-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:26px}
+.cond-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:18px 18px 16px;box-shadow:0 8px 24px -16px rgba(6,50,77,.35)}
+.cond-card h3{font-size:18px;margin:0 0 12px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.cond-card .ticks{font-size:15px;line-height:1.45}
+.tag{font-size:12px;font-weight:700;letter-spacing:.3px;text-transform:uppercase;padding:3px 9px;border-radius:999px;background:#e3f1fb;color:var(--sea)}
+.tag.pro{background:var(--sea-2);color:#fff}
+.cond-foot{font-size:14px;color:var(--muted);margin:18px 0 0}
+.conditions-band .phone{width:300px}
+@media (max-width:1000px){.cond-cards{grid-template-columns:1fr}}
+@media (max-width:860px){.conditions-band .feature .phone{width:260px}}
+
 /* Privacy band */
 .privacy-band{background:linear-gradient(160deg,var(--sea-dark),var(--sea));color:#fff}
 .privacy-band .lead{color:#d6e9f6}

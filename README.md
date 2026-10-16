@@ -24,6 +24,7 @@ Edit the HTML directly; there is no build step. Contact address used everywhere:
 | `catches.webp` | My Catches list (**real screenshot**) |
 | `catch-detail.png` | Catch details showing "Last fished here" |
 | `dashboard.png` | Dashboard |
+| `conditions.png` | Conditions tab (v1.1): Right Now + Your Best Conditions, sample data, station name only (no coordinates) |
 | `paywall.png` | Catch Book Pro paywall (not on the site yet; handy for App Store Connect review) |
 
 Any iPhone portrait screenshot works (the page frames it with CSS and crops to a 393:852 ratio). To keep the site fast, shrink them first, e.g. on a Mac: `sips -Z 1704 *.png` (about 786 × 1704). Use demo data, not real spots. When all screenshots are real, remove the "illustrative mockups" note (`mock-note`) in `index.html`.
