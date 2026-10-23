@@ -32,7 +32,7 @@ Any iPhone portrait screenshot works (the page frames it with CSS and crops to a
 To re-render the mockups: open `_mockups/screens.html` in Chrome, or render each `#id` element at 2× with a headless browser (puppeteer: `element.screenshot()`).
 
 ## App Store badge
-`index.html` has a "Coming soon" placeholder with an HTML comment. When the app is live, replace it with Apple's official "Download on the App Store" badge (from https://developer.apple.com/app-store/marketing/guidelines/) linking to `https://apps.apple.com/app/id<APP ID>`, and update the "When can I get Catch Book?" FAQ answer.
+The app is live (Oct 23, 2026): `index.html` links Apple's official "Download on the App Store" badge (`assets/img/download-on-the-app-store.svg`, from developer.apple.com, unmodified) to https://apps.apple.com/us/app/catch-book-fishing-log/id6820796721.
 
 
 ## v1.1 site wording (do not merge yet)

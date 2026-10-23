@@ -139,3 +139,5 @@ section{padding:72px 0}
 
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 @media (max-width:600px){.hero-phones .phone:last-child{display:none}.hero-phones .phone:first-child{transform:none;margin-top:8px;width:230px}}
+.app-store-link{display:inline-block;line-height:0}
+.app-store-link img{display:block;height:50px;width:auto}
