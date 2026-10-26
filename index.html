@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Catch Book: Fishing Log, Tides & Spots for iPhone</title>
-<meta name="description" content="Catch Book is a private fishing log for iPhone. Log unlimited catches with GPS, Apple Weather, NOAA tides and water temperature, pressure, and moon phase, check today&rsquo;s conditions against the ones behind your best catches, and find your best spots, months, and baits.">
+<meta name="description" content="Catch Book is a private fishing log for iPhone with a built-in 7-day wind &amp; wave forecast. Log unlimited catches with GPS, Apple Weather, NOAA tides and water temperature, waves, pressure, and moon phase, check today&rsquo;s conditions against the ones behind your best catches, and find your best spots, months, and baits.">
 <link rel="canonical" href="https://catchbookapp.com/">
 <meta name="theme-color" content="#0b7bbd">
 <meta name="color-scheme" content="light">
@@ -12,7 +12,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Catch Book">
 <meta property="og:title" content="Catch Book: Fishing Log, Tides & Spots for iPhone">
-<meta property="og:description" content="Catch Book is a private fishing log for iPhone. Log unlimited catches with GPS, Apple Weather, NOAA tides and water temperature, pressure, and moon phase, check today&rsquo;s conditions against the ones behind your best catches, and find your best spots, months, and baits.">
+<meta property="og:description" content="Catch Book is a private fishing log for iPhone with a built-in 7-day wind &amp; wave forecast. Log unlimited catches with GPS, Apple Weather, NOAA tides and water temperature, waves, pressure, and moon phase, check today&rsquo;s conditions against the ones behind your best catches, and find your best spots, months, and baits.">
 <meta property="og:url" content="https://catchbookapp.com/">
 <meta property="og:image" content="https://catchbookapp.com/assets/img/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -20,7 +20,7 @@
 <meta property="og:image:alt" content="Catch Book: your fishing log, tides, and spots, remembered">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Catch Book: Fishing Log, Tides & Spots for iPhone">
-<meta name="twitter:description" content="Catch Book is a private fishing log for iPhone. Log unlimited catches with GPS, Apple Weather, NOAA tides and water temperature, pressure, and moon phase, check today&rsquo;s conditions against the ones behind your best catches, and find your best spots, months, and baits.">
+<meta name="twitter:description" content="Catch Book is a private fishing log for iPhone with a built-in 7-day wind &amp; wave forecast. Log unlimited catches with GPS, Apple Weather, NOAA tides and water temperature, waves, pressure, and moon phase, check today&rsquo;s conditions against the ones behind your best catches, and find your best spots, months, and baits.">
 <meta name="twitter:image" content="https://catchbookapp.com/assets/img/og-image.png">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
@@ -33,6 +33,7 @@
   <div class="wrap">
     <a class="brand" href="./"><img src="assets/img/app-icon-256.png" alt="" width="34" height="34">Catch Book</a>
     <nav class="nav-links" aria-label="Main">
+      <a class="hide-sm" href="index.html#forecast">Forecast</a>
       <a class="hide-sm" href="index.html#features">Features</a>
       <a class="hide-sm" href="index.html#conditions">Conditions</a>
       <a href="index.html#pricing">Pricing</a>
@@ -48,14 +49,49 @@
       <img class="app-icon" src="assets/img/app-icon-256.png" width="92" height="92" alt="Catch Book app icon">
       <h1>Catch Book</h1>
       <p class="tagline">Your fishing log, tides, and spots&mdash;remembered.</p>
+      <a class="new-banner" href="#forecast"><span class="pill">New in 1.3</span> Wind &amp; wave forecast, built in <span aria-hidden="true">&rarr;</span></a>
       <div class="badges">
         <a class="app-store-link" href="https://apps.apple.com/us/app/catch-book-fishing-log/id6820796721"><img src="assets/img/download-on-the-app-store.svg" alt="Download on the App Store" width="150" height="50"></a>
         <span class="pill">iPhone &middot; iOS 17 or later</span>
       </div>
     </div>
     <div class="hero-phones">
+      <div class="phone"><img src="assets/screens/forecast.png" width="393" height="852" alt="New in 1.3: the Wind and Waves forecast for a sample spot, every 3 hours, with wind and gusts in mph, wave height with an estimated peak, period, and swell. Sample data." fetchpriority="high" decoding="async"></div>
       <div class="phone"><img src="assets/screens/log-catch.png" width="393" height="852" alt="Log a Catch screen with location, species, bait, and auto-filled water temperature, weather, tide, and moon phase" fetchpriority="high" decoding="async"></div>
-      <div class="phone"><img src="assets/screens/map.png" width="393" height="852" alt="Map of catches near Naples, Florida, filtered to Snook in March and April, with a Last fished here card" fetchpriority="high" decoding="async"></div>
+    </div>
+  </div>
+</section>
+
+<section id="forecast" class="forecast-band" aria-labelledby="forecast-title">
+  <div class="wrap">
+    <div class="feature">
+      <div>
+        <span class="pill">New in Catch Book 1.3 &middot; Pro</span>
+        <h2 id="forecast-title" class="section-title" style="margin-top:14px">Wind &amp; wave forecast, built in</h2>
+        <p class="lead">Press and hold any spot on the water on the Map&mdash;or tap <strong>Forecast</strong> on a saved catch&mdash;for a 7-day wind and wave forecast for that spot, every 3 hours or hourly.</p>
+        <ul class="ticks">
+          <li><strong>Wind:</strong> average and gusts in mph, and the direction</li>
+          <li><strong>Waves:</strong> average height in feet with an estimated peak, wave period, and swell</li>
+          <li>Big, bold numbers and color bars you can read on a sunny deck</li>
+        </ul>
+        <div class="value-box">
+          <p class="value-head">Forecast apps alone can cost $95+ a year.</p>
+          <p>Catch Book Pro includes the forecast, your private catch log analytics, and GPX export for <strong>$19.99/year</strong> (or $1.99/month). New subscribers try Pro free for 7 days.</p>
+          <a class="value-link" href="#pricing">See Free vs Pro</a>
+        </div>
+        <div class="cond-cards">
+          <div class="cond-card">
+            <h3>Waves on every catch <span class="tag">Free</span></h3>
+            <p>Each catch now saves the wave height, period, and direction (and the swell) for the hour you caught it&mdash;even for older photos, back to late 2021. Most inland lakes and rivers simply show &ldquo;Not available.&rdquo;</p>
+          </div>
+          <div class="cond-card">
+            <h3>Waves in Your Best Conditions <span class="tag pro">Pro</span></h3>
+            <p>Waves join tide, moon, temperature, pressure, and wind as a Best Conditions factor (0&ndash;1, 1&ndash;2, 2&ndash;3, 3&ndash;5, 5+&nbsp;ft), and the Dashboard gets a Wave Height chart.</p>
+          </div>
+        </div>
+        <p class="cond-foot">Forecast and wave data from <a href="https://open-meteo.com/">Open-Meteo.com</a> (CC&nbsp;BY&nbsp;4.0). Computer-model forecast for the nearest open water; the peak is an estimate (about 1 wave in 10). Not for navigation.</p>
+      </div>
+      <div class="feature-media"><div class="phone"><img src="assets/screens/forecast.png" width="393" height="852" alt="Wind and Waves forecast for a sample spot at 26 degrees north, 83 degrees west, every 3 hours. Saturday: wind to 18 miles per hour, waves to 2 feet. At 3 PM, wind 14 gusting 18 from the southeast, waves 2.4 feet with an estimated peak of 3 feet, 6 second period, swell 1.2 feet at 8 seconds. Sample data." loading="lazy" decoding="async"></div></div>
     </div>
   </div>
 </section>
@@ -64,7 +100,7 @@
   <div class="wrap">
     <div class="feature">
       <div>
-        <span class="pill">New in Catch Book 1.1 &middot; Conditions tab</span>
+        <span class="pill">Conditions tab</span>
         <h2 id="conditions-title" class="section-title" style="margin-top:14px">Know when to go</h2>
         <p class="lead">Open the Conditions tab before you head out. See what the water is doing right now, and how today stacks up against the days you caught the most fish.</p>
         <div class="cond-cards">
@@ -75,21 +111,22 @@
               <li>Moon phase and illumination</li>
               <li>Air and water temperature</li>
               <li>Barometric pressure and whether it&rsquo;s rising or falling</li>
-              <li>Wind speed and direction. Pull down to refresh</li>
+              <li>Wind speed and direction</li>
+              <li>Waves: height, period, direction, and swell (new in 1.3). Pull down to refresh</li>
             </ul>
           </div>
           <div class="cond-card">
             <h3>Your Best Conditions <span class="tag pro">Pro</span></h3>
             <ul class="ticks">
               <li>For each condition, the range that produced most of your catches, like &ldquo;Outgoing, 40&ndash;80% to low&rdquo;</li>
-              <li>A check or &times; for today&rsquo;s value, and a summary: &ldquo;Today matches 4 of 6 of your best conditions&rdquo;</li>
+              <li>A check or &times; for today&rsquo;s value, and a summary: &ldquo;Today matches 5 of 8 of your best conditions&rdquo;</li>
               <li>Filter by species, because the best snook day isn&rsquo;t always the best redfish day</li>
             </ul>
           </div>
         </div>
         <p class="cond-foot">Built from your own catch log, on your iPhone. A pattern appears once at least 5 catches recorded that condition. Free users see Your Best Conditions blurred until they upgrade.</p>
       </div>
-      <div class="feature-media"><div class="phone"><img src="assets/screens/conditions.png" width="393" height="852" alt="Conditions tab. Right Now shows an outgoing tide, 62% to low at the Naples Bay station, a waxing gibbous moon, 76.4&deg;F water, 79&deg;F air, rising pressure at 30.02 inHg, and a northeast wind at 8 mph. Your Best Conditions, filtered to Snook, says today matches 4 of 6 of your best conditions, with checks for tide, moon, and water temperature. Sample data." loading="lazy" decoding="async"></div></div>
+      <div class="feature-media"><div class="phone"><img src="assets/screens/conditions.png" width="393" height="852" alt="Conditions tab. Right Now shows an outgoing tide, 62% to low at the Naples Bay station, a waxing gibbous moon, 76.4&deg;F water, 79&deg;F air, rising pressure at 30.02 inHg, and a northeast wind at 8 mph. Right Now also shows waves of 1.6 feet at 6 seconds from the east. Your Best Conditions, filtered to Snook, says today matches 5 of 8 of your best conditions, with checks for tide and moon phase. Sample data." loading="lazy" decoding="async"></div></div>
     </div>
   </div>
 </section>
@@ -108,6 +145,7 @@
         <ul class="ticks">
           <li>Air temperature, wind, sky, and barometric pressure from <strong>Apple&nbsp;Weather</strong></li>
           <li>Tide state at the catch time (incoming or outgoing, percent to high or low) and water temperature from the nearest <strong>NOAA</strong> station on any U.S. coast</li>
+          <li>Waves at the catch time: height, period, direction, and swell from <strong>Open-Meteo</strong> (new in 1.3)</li>
           <li>Moon phase and illumination, calculated on your iPhone</li>
           <li>Species, length, weight, Kept or Released, bait, photo, and notes. Everything stays editable</li>
         </ul>
@@ -123,6 +161,7 @@
           <li>Re-center on your location in one tap</li>
           <li>A radius slider from &frac12; to 25 miles, anchored on <strong>My Location</strong> or the <strong>Map Center</strong></li>
           <li>&ldquo;Near you&rdquo; shows the last catch and how many are within that radius</li>
+          <li><strong>New in 1.3 (Pro):</strong> press and hold the water for a 7-day wind &amp; wave forecast</li>
         </ul>
       </div>
       <div class="feature-media"><div class="phone"><img src="assets/screens/map.png" width="393" height="852" alt="Map screen with filtered catch pins" loading="lazy" decoding="async"></div></div>
@@ -151,11 +190,11 @@
     <div class="feature">
       <div>
         <h3>A dashboard of what works</h3>
-        <p>Your numbers, not guesswork: total catches, top species, best bait, best time of day, best month, moon phase, tide, pressure, weight by species, Kept vs Released, sky conditions, water-temperature ranges, and your top spots. Free users see every card&rsquo;s title; Catch Book Pro unlocks the data.</p>
+        <p>Your numbers, not guesswork: total catches, top species, best bait, best time of day, best month, moon phase, tide, pressure, wave height, weight by species, Kept vs Released, sky conditions, water-temperature ranges, and your top spots. Free users see every card&rsquo;s title; Catch Book Pro unlocks the data.</p>
       </div>
       <div class="feature-media"><div class="phone"><img src="assets/screens/dashboard.png" width="393" height="852" alt="Dashboard with stats and charts" loading="lazy" decoding="async"></div></div>
     </div>
-    <p class="mock-note">The My Catches list is a real iPhone screenshot. The other screens, including Conditions, are illustrative mockups with sample data.</p>
+    <p class="mock-note">The My Catches list is a real iPhone screenshot. The other screens, including Conditions and the wind &amp; wave forecast, are illustrative mockups with sample data and made-up coordinates.</p>
   </div>
 </section>
 
@@ -177,14 +216,14 @@
   <div class="wrap">
     <div class="center">
       <h2 class="section-title">Try it free. Upgrade when it&rsquo;s earned its place.</h2>
-      <p class="lead">Log unlimited catches free. Catch Book Pro unlocks Dashboard insights, today-vs-your-best conditions, and GPX export. New subscribers can try Pro free for 7 days.</p>
+      <p class="lead">Log unlimited catches free. Catch Book Pro adds the 7-day wind &amp; wave forecast, Dashboard insights, today-vs-your-best conditions, and GPX export. New subscribers can try Pro free for 7 days.</p>
     </div>
     <div class="plans">
-      <div class="plan"><h3>Free</h3><div class="price">$0</div><p>Unlimited logging, auto conditions, current conditions, map, filters, list, and iCloud backup. Dashboard titles stay visible; the data is blurred until Pro.</p></div>
-      <div class="plan"><h3>Pro Monthly</h3><div class="price">$1.99<small> / month</small></div><p>Dashboard insights, today vs. your best conditions, and GPX export (one catch or your whole log). Starts with a 7-day free trial for new subscribers. Cancel anytime.</p></div>
-      <div class="plan best"><span class="flag">Best value</span><h3>Pro Yearly</h3><div class="price">$19.99<small> / year</small></div><p>Dashboard insights, today vs. your best conditions, and GPX export. Starts with a 7-day free trial for new subscribers. Save about 16% compared with monthly.</p></div>
+      <div class="plan"><h3>Free</h3><div class="price">$0</div><p>Unlimited logging, auto conditions (now with waves), current conditions, map, filters, list, and iCloud backup. Dashboard titles stay visible; the data is blurred until Pro.</p></div>
+      <div class="plan"><h3>Pro Monthly</h3><div class="price">$1.99<small> / month</small></div><p>The 7-day wind &amp; wave forecast for any spot, Dashboard insights, today vs. your best conditions, and GPX export (one catch or your whole log). Starts with a 7-day free trial for new subscribers. Cancel anytime.</p></div>
+      <div class="plan best"><span class="flag">Best value</span><h3>Pro Yearly</h3><div class="price">$19.99<small> / year</small></div><p>The 7-day wind &amp; wave forecast, Dashboard insights, today vs. your best conditions, and GPX export. Starts with a 7-day free trial for new subscribers. Save about 16% compared with monthly.</p></div>
     </div>
-    <p class="fine center">U.S. prices; other countries are priced by the App Store in local currency. The 7-day free trial is for new subscribers; unless you cancel at least 24 hours before it ends, it becomes a paid subscription at the plan&rsquo;s price. Subscriptions renew automatically until cancelled in your Apple Account settings. If you stop subscribing, everything you&rsquo;ve logged stays available to view, edit, filter, map, back up, and restore; Dashboard insights and GPX export require Pro again. See the <a href="terms.html">Terms</a>.</p>
+    <p class="fine center">U.S. prices; other countries are priced by the App Store in local currency. The 7-day free trial is for new subscribers; unless you cancel at least 24 hours before it ends, it becomes a paid subscription at the plan&rsquo;s price. Subscriptions renew automatically until cancelled in your Apple Account settings. If you stop subscribing, everything you&rsquo;ve logged stays available to view, edit, filter, map, back up, and restore; Dashboard insights, the wind &amp; wave forecast, and GPX export require Pro again. See the <a href="terms.html">Terms</a>.</p>
   </div>
 </section>
 
@@ -196,11 +235,12 @@
       <details><summary>Do I need an account?</summary><p>No. There&rsquo;s no sign-up. Backups use your own iCloud Drive and the subscription uses your Apple Account.</p></details>
       <details><summary>Can anyone else see my spots?</summary><p>No. Your catches are stored on your iPhone and, if you use iCloud, in your private iCloud Drive. We don&rsquo;t run a server and never receive your catches or locations. Read the <a href="privacy.html">Privacy Policy</a>.</p></details>
       <details><summary>Does it work offline, out on the water?</summary><p>Yes. You can log a catch with GPS anywhere. Weather, pressure, tide, and water temperature fill in when you have a connection, and you can always type them in yourself.</p></details>
-      <details><summary>Where do tides and water temperature come from?</summary><p>From the nearest NOAA station to the catch (U.S. coasts, Great Lakes, and territories, within about 100 miles). The app shows the station name and the tide state at the catch time. Weather and pressure come from Apple Weather and work anywhere.</p></details>
-      <details><summary>What&rsquo;s free, and what does Pro unlock?</summary><p>Logging catches is free and unlimited, along with the map, filters, auto conditions, and iCloud backup. Catch Book Pro unlocks the Dashboard insights (card titles stay visible for free, with the data blurred), the comparison of today&rsquo;s conditions with your best catches on the Conditions tab, and GPX export for Garmin, Navionics, and other chart apps.</p></details>
+      <details><summary>Where do tides and water temperature come from?</summary><p>From the nearest NOAA station to the catch (U.S. coasts, Great Lakes, and territories, within about 100 miles). The app shows the station name and the tide state at the catch time. Weather and pressure come from Apple Weather and work anywhere. Waves and the wind &amp; wave forecast come from Open-Meteo&rsquo;s models (coastal and offshore waters; most inland lakes and rivers have no wave data).</p></details>
+      <details><summary>Does Catch Book have a marine forecast?</summary><p>Yes, new in version 1.3 with Catch Book Pro. On the Map, press and hold any spot on the water (or open a saved catch and tap <strong>Forecast</strong>) to see a 7-day forecast every 3 hours or hourly: wind average and gusts in mph with direction, wave height with an estimated peak, wave period, and swell. Forecast apps alone can cost $95+ a year; Catch Book Pro includes it with the Dashboard insights and GPX export for $19.99/year or $1.99/month. The data comes from Open-Meteo&rsquo;s weather and marine models. It&rsquo;s a model forecast, not a buoy reading, and not for navigation.</p></details>
+      <details><summary>What&rsquo;s free, and what does Pro unlock?</summary><p>Logging catches is free and unlimited, along with the map, filters, auto conditions (including waves at the catch time), and iCloud backup. Catch Book Pro unlocks the 7-day wind &amp; wave forecast, the Dashboard insights (card titles stay visible for free, with the data blurred), the comparison of today&rsquo;s conditions with your best catches on the Conditions tab, and GPX export for Garmin, Navionics, and other chart apps.</p></details>
       <details><summary>Is there a free trial?</summary><p>Yes. If you&rsquo;re new to Catch Book Pro, both the monthly and yearly plans start with a 7-day free trial. The app shows the trial and the price before you start. Cancel at least 24 hours before the trial ends (iPhone Settings &gt; your name &gt; Subscriptions) and you won&rsquo;t be charged; otherwise the plan you picked starts when the trial ends. One free trial per Apple Account.</p></details>
-      <details><summary>What happens if I cancel Pro?</summary><p>You keep everything you&rsquo;ve logged. You can still view, edit, filter, map, back up, and restore all your catches. Dashboard insights and GPX export go back behind Pro.</p></details>
-      <details><summary>Can I log an old catch from a photo?</summary><p>Yes. Add a photo and Catch Book asks whether to use the photo&rsquo;s time and location. If you say yes, it fills in historical weather, tide, water temperature, and moon for that time and place. A short tour on first launch shows how.</p></details>
+      <details><summary>What happens if I cancel Pro?</summary><p>You keep everything you&rsquo;ve logged. You can still view, edit, filter, map, back up, and restore all your catches. Dashboard insights, the wind &amp; wave forecast, and GPX export go back behind Pro.</p></details>
+      <details><summary>Can I log an old catch from a photo?</summary><p>Yes. Add a photo and Catch Book asks whether to use the photo&rsquo;s time and location. If you say yes, it fills in historical weather, tide, water temperature, waves, and moon for that time and place. A short tour on first launch shows how.</p></details>
       <details><summary>Is there an iPad or Android version?</summary><p>Catch Book is made for iPhone. It isn&rsquo;t available for Android.</p></details>
     </div>
     <p class="center" style="margin-top:28px">More help on the <a href="support.html">Support page</a>.</p>
