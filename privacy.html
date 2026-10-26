@@ -52,10 +52,10 @@
 <p><strong>None.</strong> We do not collect, store, sell, or share personal information. Catch Book contains no analytics or advertising software, no third-party tracking code, and no sign-in. We cannot see what you log.</p>
 
 <h2>Information that stays on your device</h2>
-<p>When you log a catch, the app saves the details you enter or allow it to fill in: date and time, location, species, length, weight, Kept or Released, bait, photo, notes, and conditions (weather, barometric pressure, tide, water temperature, and moon phase). This information is stored by the app on your iPhone. You can edit or delete any catch, or delete all of them, in the app. Deleting the app removes the data stored on the device.</p>
+<p>When you log a catch, the app saves the details you enter or allow it to fill in: date and time, location, species, length, weight, Kept or Released, bait, photo, notes, and conditions (weather, barometric pressure, waves, tide, water temperature, and moon phase). This information is stored by the app on your iPhone. You can edit or delete any catch, or delete all of them, in the app. Deleting the app removes the data stored on the device.</p>
 
 <h3>Location</h3>
-<p>With your permission (&ldquo;While Using the App&rdquo;), the app uses your iPhone&rsquo;s location to record where you caught a fish, to look up conditions for that spot, and to show current conditions where you are on the Conditions tab. The app does not track your location in the background. You can enter coordinates by hand instead, and you can change the permission at any time in the iPhone Settings app.</p>
+<p>With your permission (&ldquo;While Using the App&rdquo;), the app uses your iPhone&rsquo;s location to record where you caught a fish, to look up conditions for that spot, and to show current conditions where you are on the Conditions tab. On the Map, Catch Book Pro can also show a wind and wave forecast for any spot you choose. The app does not track your location in the background. You can enter coordinates by hand instead, and you can change the permission at any time in the iPhone Settings app.</p>
 
 <h3>Camera and photos</h3>
 <p>If you choose to, you can take a photo or pick one from your library to attach to a catch. Only the photo you choose is used. On your iPhone, the app can read that photo&rsquo;s date, time, and location metadata (if present) and ask whether to use them for the catch. Saying yes lets the app look up historical weather, tide, water temperature, and moon for that time and place. Saying no leaves your current time and location unchanged. Photos are stored with your catches on your iPhone (and in your iCloud backup, below). Photo metadata is not sent to us.</p>
@@ -65,6 +65,7 @@
 <ul>
   <li><strong>Apple Weather (WeatherKit).</strong> The coordinates of the catch, or your current location on the Conditions tab (and the catch time, when looking up past or future hours) are sent to Apple to get weather, including air temperature, wind, sky, and barometric pressure. Apple&rsquo;s handling of this request is covered by <a href="https://www.apple.com/legal/privacy/">Apple&rsquo;s Privacy Policy</a>; Apple states that location sent to Apple Weather is used only to provide weather information and is not associated with personally identifying information.</li>
   <li><strong>NOAA (U.S. National Oceanic and Atmospheric Administration) CO-OPS.</strong> The app picks the nearest NOAA tide or water-temperature station on your iPhone, using the catch coordinates, and then requests tide predictions and water temperature for that station and time. Only the station number (and the time window for the request) is sent; your exact coordinates are not. Like any website, NOAA&rsquo;s servers can see your device&rsquo;s IP address. See <a href="https://www.noaa.gov/protecting-your-privacy">NOAA&rsquo;s privacy policy</a>.</li>
+  <li><strong>Open-Meteo (wave and marine forecast data).</strong> To add wave height, period, and direction to a catch, the app sends the catch coordinates, rounded to two decimal places (about half a mile), and the catch date to Open-Meteo. The Conditions tab sends your current location, rounded the same way, to show the waves where you are now. When you ask for the wind and wave forecast for a spot on the map, the rounded coordinates of that spot are sent. No account, name, or device identifier is sent. Like any website, Open-Meteo&rsquo;s servers can see your device&rsquo;s IP address; Open-Meteo states that it keeps server logs, which may include the coordinates requested, for troubleshooting and deletes them after 90 days. See <a href="https://open-meteo.com/en/terms">Open-Meteo&rsquo;s terms and privacy policy</a>.</li>
 </ul>
 <p>If you&rsquo;re offline, nothing is sent, and you can enter conditions yourself.</p>
 
@@ -113,7 +114,7 @@
       <a href="terms.html">Terms</a>
       <a href="support.html">Support</a>
     </nav>
-    <p class="attribution">Weather data in the app is provided by Apple&nbsp;Weather. Tide and water-temperature data come from NOAA CO-OPS. Apple, the Apple logo, iPhone, iCloud, and App Store are trademarks of Apple Inc., registered in the U.S. and other countries. Catch Book is not affiliated with NOAA.</p>
+    <p class="attribution">Weather data in the app is provided by Apple&nbsp;Weather. Tide and water-temperature data come from NOAA CO-OPS. Wind and wave data from <a href="https://open-meteo.com/">Open-Meteo.com</a> (CC&nbsp;BY&nbsp;4.0). Apple, the Apple logo, iPhone, iCloud, and App Store are trademarks of Apple Inc., registered in the U.S. and other countries. Catch Book is not affiliated with NOAA.</p>
   </div>
 </footer>
 </body>
